@@ -3,6 +3,15 @@
     direction:rtl !important;
 }
 
+.text-rtl{
+    text-align: right;
+}
+
+.right{
+    left: auto !important;
+    right: 0 !important;
+}
+
 h3 {
     font-size: 1em !important;
 }

@@ -1,3 +1,4 @@
+
 angular.module('app').controller('profileUpdate', function($scope, $location) {
 	
 	console.log('in');
@@ -13,4 +14,6 @@ $scope.go = function ( path ) {
 };
 
 
-});
+})
+
+;

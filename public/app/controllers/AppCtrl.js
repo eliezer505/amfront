@@ -1,12 +1,14 @@
 angular
         .module('app')
 
-        .config(function ($mdThemingProvider) {
+        .config(function ($mdThemingProvider,$mdBiDirectionalProvider) {
             $mdThemingProvider.theme('altTheme')
                     .primaryPalette('deep-orange')
                     .accentPalette('deep-orange'); // specify primary color, all
             // other color intentions will be inherited
             // from default
+            
+             $mdBiDirectionalProvider.rtlMode(true);
         })
 
         .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $mdMedia) {

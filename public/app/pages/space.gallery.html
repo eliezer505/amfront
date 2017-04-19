@@ -1,0 +1,39 @@
+<div ng-controller="spaceGalleryCtrl">
+	<div masonry="{columnWidth: 50, gutter: 1, transitionDuration: '.9s', hiddenStyle: {opacity: .001, transform: 'scale(0.01)'}, visibleStyle: {opacity: 1, transform: 'rotate(200deg)'}}">
+		<div class="masonry-brick" ng-repeat="brick in bricks">
+		
+			
+			      <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+     
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content layout="row" layout-align="space-between">
+          <div class="md-media-sm card-media">
+          		<img ng-src="{{ brick }}" alt="A masonry brick">
+          		
+          </div>
+
+          <md-card-actions layout="column">
+            <md-button class="md-icon-button" aria-label="Favorite">
+              <md-icon > <i class="material-icons">&#xE410;</i></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Settings">
+              <md-icon> <i class="material-icons">&#xE410;</i></md-icon>
+            </md-button>
+           
+                 <md-slider-container flex>
+  
+      <md-slider md-discrete ng-model="bass" min="0" max="100" step="10" aria-label="bass" class="md-primary"
+                 md-vertical></md-slider>
+      </md-slider>
+    </md-slider-container>
+
+          </md-card-actions>
+        </md-card-content>
+      </md-card>
+    
+		</div>
+	</div>
+</div>

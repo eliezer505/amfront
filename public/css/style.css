@@ -1,16 +1,15 @@
 
 .rtl{
-    direction:rtl !important;
+    direction:rtl !important; 
+    text-align: right !important;
 }
 
-.text-rtl{
-    text-align: right;
-}
-
-.right{
-    left: auto !important;
-    right: 0 !important;
-}
+    md-input-container .md-placeholder, md-input-container label:not(.md-no-float):not(.md-container-ignore) {
+        transform-origin: right top !important;
+        padding-left: 0px !important;
+    }
+    
+ 
 
 h3 {
     font-size: 1em !important;
@@ -49,9 +48,7 @@ h1 {
         height: 100%;
         margin: 0 auto;
     }
-    .rtl{
-    	text-align: right!important;
-    }
+
    .gridListdemoDynamicTiles md-icon {
   width: 50%;
   height: 30%; }

@@ -1,5 +1,5 @@
 
-angular.module('app').controller('mainClubesCtrl', 
+angular.module('app').controller('clubPartyCtrl', 
 function ($scope,$state) {
     $scope.clubes = [{id: 1, name: "אולטראסאונד", distance: 14.5, photo: "img/avatar.png"},
         {id: 2, name: "חורבה", distance: 7.4, photo: "img/avatar.png"},

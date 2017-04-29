@@ -1,52 +1,7 @@
 <div ng-controller="clubesCtrl" >
-
-	<md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch class="rtl">
-		<md-fab-toolbar
-		md-direction="right" style="position: absolute; width:96%;">
-			<md-fab-trigger class="align-with-text">
-				<md-button aria-label="menu" class="md-fab md-primary">
-					<md-icon class="md-default-theme" class="material-icons">
-						&#xE5D2;
-					</md-icon>
-				</md-button>
-			</md-fab-trigger>
-
-			<md-toolbar>
-				<md-fab-actions class="md-toolbar-tools">
-					<md-button aria-label="close" class="md-icon-button">
-						<md-icon class="md-default-theme" class="material-icons">
-							&#xE5D2;
-						</md-icon>
-					</md-button>
-					<md-button aria-label="comment" class="md-icon-button">
-						<md-icon class="md-default-theme" class="material-icons">
-							&#xE87E;
-						</md-icon>
-					</md-button>
-					<md-button aria-label="label" class="md-icon-button">
-						<md-icon class="md-default-theme" class="material-icons">
-							&#xE0C8;
-						</md-icon>
-					</md-button>
-					<md-button aria-label="photo" class="md-icon-button">
-						<md-icon class="md-default-theme" class="material-icons">
-							&#xE3B0;
-						</md-icon>
-					</md-button>
-					<md-button aria-label="photo" class="md-icon-button">
-						<md-icon class="md-default-theme" class="material-icons">
-							&#xE86B;
-						</md-icon>
-					</md-button>
-					<md-button aria-label="photo" class="md-icon-button">
-						<md-icon class="md-default-theme" class="material-icons">
-							&#xE8DC;
-						</md-icon>
-					</md-button>
-				</md-fab-actions>
-			</md-toolbar>
-		</md-fab-toolbar>
-		<md-card-header>
+		<md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch class="rtl ">
+		
+		<md-card-header class="clubnose">
 
 			<md-card-avatar>
 				<img class="md-user-avatar" src="img/avatar.png">
@@ -57,111 +12,37 @@
 				<span class="md-subhead">2.3 קמ</span>
 			</md-card-header-text>
 		</md-card-header>
-		<img ng-src="img/circus.png" class="md-card-image" alt="Washed Out">
-		<md-card-title>
-			<md-card-title-text>
-				<span class="md-headline">הספריה קריות</span>
-				<span class="md-subhead">קצת עלינו</span>
-			</md-card-title-text>
-		</md-card-title>
-		<md-card-actions layout="row" layout-align="start center">
-			<md-button >
-				<i class="material-icons">&#xE815;</i>מסיבות
-			</md-button>
-			<md-button>
-				<i class="material-icons">&#xE89C;</i>הספייס שלנו
-			</md-button>
-			<md-button>
-				<i class="material-icons">&#xE55D;</i>ניווט למועדון
-			</md-button>
-		</md-card-actions>
-		<md-card-content>
-			<p>
-				הבאנו לעיר ,
-				משהו אדיר.
-				לא עוד סתם בר רגיל.
-				משהו קצת יותר צעיר .
-				הצמיד הירוק הצמיד האדום הצמיד הזהב הכחול והכסוף
-				יתנו לך לשתות מהכל
-				וכמובן שדאגנו שיצא לך בזול!
-				לשמירת מקומות שלחו הודעה לאינבוקס
-			</p>
-
-		</md-card-content>
-		<md-card-title-text>
-			<span class="md-headline">המסיבות הקרובות</span>
-
-		</md-card-title-text>
-		<md-list-item class="md-3-line" md-theme="purple" >
-			<img src="img/avatar.png" class="md-avatar">
-			<div class="md-list-item-text" layout="column">
-				<p>
-					14.2
-				</p>
-				<p>
-					22:00
-				</p>
-				<p>
-					רביעי שחורה
-				</p>
-			</div>
-
-			<md-button class="md-secondary">
-				<md-icon class="md-default-theme" class="material-icons">
-					&#xE87E;
-				</md-icon>
-			</md-button>
-			<md-button class="md-secondary">
-				הרשם למסיבה
-			</md-button>
-		</md-list-item>
-		<md-list-item class="md-3-line" md-theme="purple" >
-			<img src="img/avatar.png" class="md-avatar">
-			<div class="md-list-item-text" layout="column">
-				<p>
-					14.2
-				</p>
-				<p>
-					22:00
-				</p>
-				<p>
-					רביעי שחורה
-				</p>
-			</div>
-
-			<md-button class="md-secondary">
-				<md-icon class="md-default-theme" class="material-icons">
-					&#xE87E;
-				</md-icon>
-			</md-button>
-			<md-button class="md-secondary">
-				הרשם למסיבה
-			</md-button>
-		</md-list-item>
-				<md-list-item class="md-3-line" md-theme="purple" >
-			<img src="img/avatar.png" class="md-avatar">
-			<div class="md-list-item-text" layout="column">
-				<p>
-					14.2
-				</p>
-				<p>
-					22:00
-				</p>
-				<p>
-					רביעי שחורה
-				</p>
-			</div>
-
-			<md-button class="md-secondary">
-				<md-icon class="md-default-theme" class="material-icons">
-					&#xE87E;
-				</md-icon>
-			</md-button>
-			<md-button class="md-secondary">
-				הרשם למסיבה
-			</md-button>
-		</md-list-item>
-
 	</md-card>
+	
+<md-content class="md-padding">
+                    <md-nav-bar layout="row" layout-align="center end"
+                        md-selected-nav-item="currentNavItem"
+                        nav-bar-aria-label="navigation links">
+
+                        <md-nav-item md-nav-sref="club.about" name="favorites">
+                            <i class="material-icons">קצת עלינו</i> <!-- favorites -->
+                        </md-nav-item>
+                        <md-nav-item md-nav-sref="club.party" name="history">
+                            <i class="material-icons">אירועים ומסיבות</i>  <!-- history -->
+                        </md-nav-item>
+                        <!-- these require actual routing with ui-router or ng-route, so they
+                        won't work in the demo
+                        <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
+                        <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
+                        You can also add options for the <code>ui-sref-opts</code> attribute.
+                        <md-nav-item md-nav-sref="page6" sref-opts="{reload:true, notify:true}">
+                          Page Six
+                        </md-nav-item>
+                        -->
+                    </md-nav-bar>
+                    <div class="ext-content">
+                        <div ui-view></div>
+                      <!--  External content for `<span>{{currentNavItem}}</span>`. -->
+                      
+                    </div>
+              
+
+                </md-content>
+
 
 </div>

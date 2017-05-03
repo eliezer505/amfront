@@ -1,15 +1,7 @@
 
 .rtl{
-    direction:rtl !important; 
-    text-align: right !important;
+    direction:rtl !important;
 }
-
-    md-input-container .md-placeholder, md-input-container label:not(.md-no-float):not(.md-container-ignore) {
-        transform-origin: right top !important;
-        padding-left: 0px !important;
-    }
-    
- 
 
 h3 {
     font-size: 1em !important;
@@ -36,7 +28,7 @@ h1 {
 
     #grad1 {
 
-        background: rgb(255,138,101);  /* For browsers that do not support gradients*/     
+
         background: -webkit-linear-gradient(top to bottom, rgb(255,138,101), rgb(255,64,129)); /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(top to bottom, rgb(255,138,101), rgb(255,64,129));  /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(top to bottom, rgb(255,138,101), rgb(255,64,129)); /* For Firefox 3.6 to 15 */
@@ -48,7 +40,9 @@ h1 {
         height: 100%;
         margin: 0 auto;
     }
-
+    .rtl{
+    	text-align: right!important;
+    }
    .gridListdemoDynamicTiles md-icon {
   width: 50%;
   height: 30%; }
@@ -243,4 +237,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
 
 .md-chips{
 	    box-shadow: none !important;
+}
+.clubnose{
+	    background: url(https://highape.com/wp-content/uploads/2016/12/party.jpg) center no-repeat;
 }

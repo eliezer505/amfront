@@ -17,7 +17,7 @@
 		<div ng-controller="AppCtrl" layout="column" style="height: 100%;">
 
 			<!-- Upper toolbar with bottons to serve the user -->
-			<md-toolbar md-theme="altTheme" class="md-accent md-hue-1">
+			<md-toolbar md-theme="altTheme" class="md-primary">
 				<div class="md-toolbar-tools">
 					<md-button class="md-icon-button" aria-label="Side Panel" ng-click="openSideNavPanel()">
 						<md-tooltip>
@@ -57,7 +57,7 @@
 			<div ui-view></div>
 
 			<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-				<md-toolbar layout="row" md-theme="altTheme" class="md-accent md-hue-1">
+				<md-toolbar layout="row" md-theme="altTheme" class="md-primary">
 					<div class="md-toolbar-tools">
 						<span class="margin-left-1" ><h1>C</h1></span>
 						<span><h3>lu</h3></span>
@@ -189,6 +189,8 @@
 
 		<script src="app/controllers/profileImagesCtrl.js" type="text/javascript"></script>
 		<script src="app/controllers/profileUpdate.js" type="text/javascript"></script>
+				<script src="app/controllers/clubPartyCtrl.js" type="text/javascript"></script>
+		<script src="app/controllers/clubAboutCtrl.js" type="text/javascript"></script>
 
 	</body>
 </html>

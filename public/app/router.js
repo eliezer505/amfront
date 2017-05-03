@@ -59,6 +59,21 @@ var club = angular.module("app").config(function($stateProvider, $urlRouterProvi
 		params : {
 			obj : null
 		}
+			}).state('club.party', {
+		url : "/club.party",
+		templateUrl : "app/pages/club.party.html"
+		//      controller: clubPartyCtrl
+		//              function($scope) {
+		//        $scope.items = ["A", "List", "Of", "Items"];
+		//      }
+			}).state('club.about', {
+		url : "/club.about",
+		templateUrl : "app/pages/club.about.html"
+		//      controller: clubAboutCtrl
+		//              function($scope) {
+		//        $scope.items = ["A", "List", "Of", "Items"];
+		//      }
+
 	}).state('profileUpdate', {
 		url : "/profileUpdate",
 		templateUrl : "app/pages/profileUpdate.html"

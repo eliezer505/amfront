@@ -3,12 +3,10 @@ angular
 
         .config(function ($mdThemingProvider) {
             $mdThemingProvider.theme('altTheme')
-                    .primaryPalette('deep-orange')
-                    .accentPalette('deep-orange'); // specify primary color, all
+                    .primaryPalette('deep-purple')
+                    .accentPalette('purple'); // specify primary color, all
             // other color intentions will be inherited
             // from default
-            
-                    //  $mdBiDirectionalProvider.rtlMode(true);
         })
 
         .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $mdMedia) {

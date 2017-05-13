@@ -1,39 +1,18 @@
-<div ng-controller="spaceGalleryCtrl">
-	<div masonry="{columnWidth: 50, gutter: 1, transitionDuration: '.9s', hiddenStyle: {opacity: .001, transform: 'scale(0.01)'}, visibleStyle: {opacity: 1, transform: 'rotate(200deg)'}}">
-		<div class="masonry-brick" ng-repeat="brick in bricks">
-		
-			
-			      <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
-        <md-card-title>
-          <md-card-title-text>
-     
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content layout="row" layout-align="space-between">
-          <div class="md-media-sm card-media">
-          		<img ng-src="{{ brick }}" alt="A masonry brick">
-          		
-          </div>
+<div ng-controller="spaceGalleryCtrl as space">
+		<md-content layout-padding>
+    <md-grid-list
+        md-cols-gt-md="12" md-cols="3" md-cols-md="8"
+        md-row-height-gt-md="1:1" md-row-height="4:3"
+        md-gutter-gt-md="16px" md-gutter-md="8px" md-gutter="4px">
+      <md-grid-tile
+          ng-repeat="tile in space.colorTiles"
+          ng-style="{
+            'background': tile.color
+          }"
+          md-colspan-gt-sm="{{tile.colspan}}"
+          md-rowspan-gt-sm="{{tile.rowspan}}">
+      </md-grid-tile>
+    </md-grid-list>
+  </md-content>
 
-          <md-card-actions layout="column">
-            <md-button class="md-icon-button" aria-label="Favorite">
-              <md-icon > <i class="material-icons">&#xE410;</i></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Settings">
-              <md-icon> <i class="material-icons">&#xE410;</i></md-icon>
-            </md-button>
-           
-                 <md-slider-container flex>
-  
-      <md-slider md-discrete ng-model="bass" min="0" max="100" step="10" aria-label="bass" class="md-primary"
-                 md-vertical></md-slider>
-      </md-slider>
-    </md-slider-container>
-
-          </md-card-actions>
-        </md-card-content>
-      </md-card>
-    
-		</div>
-	</div>
 </div>

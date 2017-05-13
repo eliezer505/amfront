@@ -14,9 +14,9 @@ var club = angular.module("app").config(function($stateProvider, $urlRouterProvi
 		//              function($scope) {
 		//        $scope.items = ["A", "List", "Of", "Items"];
 		//      }
-	}).state('main.history', {
-		url : "/history",
-		templateUrl : "app/pages/main.history.html"
+	}).state('main.search', {
+		url : "/search",
+		templateUrl : "app/pages/main.search.html"
 		//      controller: mainClubesCtrl
 		//              function($scope) {
 		//        $scope.items = ["A", "List", "Of", "Items"];
@@ -38,6 +38,18 @@ var club = angular.module("app").config(function($stateProvider, $urlRouterProvi
 	}).state('space.gallery', {
 		url : "/space.gallery",
 		templateUrl : "app/pages/space.gallery.html"
+
+		//
+		//      }
+			}).state('space.boys', {
+		url : "/space.boys",
+		templateUrl : "app/pages/space.boys.html"
+
+		//
+		//      }
+			}).state('space.girls', {
+		url : "/space.girls",
+		templateUrl : "app/pages/space.girls.html"
 
 		//
 		//      }

@@ -9,7 +9,17 @@ angular
             // from default
         })
 
-        .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $mdMedia) {
+        .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $mdMedia, $http) {
+
+            $http.get('../restrict/config.json')
+                    .then(function mySucces(response) {
+                        var config = response;
+                        firebase.initializeApp(config);
+                        console.log(firebase);
+                    }, function myError(response) {
+                        console.log(response);
+                    });
+
             $scope.showMobileMainHeader = true;
             $scope.openSideNavPanel = function () {
                 $mdSidenav('left').open();

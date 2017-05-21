@@ -1,8 +1,9 @@
-(function() {
+(function () {
 
 
 
-	var club = angular.module("app", ['ngMaterial', 'ui.router','wu.masonry','ngMessages','firebase']);
+    var club = angular.module("app", ['ngMaterial', 'ui.router', 'wu.masonry', 'ngMessages', 'firebase']);
+
 
 
 

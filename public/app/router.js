@@ -1,10 +1,13 @@
 var club = angular.module("app").config(function($stateProvider, $urlRouterProvider) {
 	//
 	// For any unmatched url, redirect to /state1
-	$urlRouterProvider.otherwise("/main");
+	$urlRouterProvider.otherwise("/login");
 	//
 	// Now set up the states
-	$stateProvider.state('main', {
+	$stateProvider .state('login', {
+		url : "/login",
+		templateUrl : "app/pages/login.html"
+	}).state('main', {
 		url : "/main",
 		templateUrl : "app/pages/main.html"
 	}).state('main.clubes', {

@@ -62,6 +62,18 @@ var club = angular.module("app").config(function($stateProvider, $urlRouterProvi
 
 		//
 		//      }
+					}).state('events', {
+		url : "/events",
+		templateUrl : "app/pages/events.html"
+
+		//
+		//      }
+							}).state('pictures', {
+		url : "/pictures",
+		templateUrl : "app/pages/pictures.html"
+
+		//
+		//      }
 					}).state('profile.images', {
 		url : "/profile.images",
 		templateUrl : "app/pages/profile.images.html"

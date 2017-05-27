@@ -1,9 +1,5 @@
- angular.module('app').controller('spaceBoysCtrl', 
-<<<<<<< HEAD
+ angular.module('app').controller('eventsCtrl', 
 function ($scope,$timeout,$mdDialog,$mdMedia) {
-=======
-function ($scope,$timeout) {
->>>>>>> 148f6d8c8e2114c4aed20025a0697596a1f65a10
  
 
  
@@ -35,7 +31,6 @@ function ($scope,$timeout) {
       return 3;
     }
   }
-<<<<<<< HEAD
   $scope.showConfirm = function(ev) {
     // Appending dialog to document.body to cover sidenav in docs app
     var confirm = $mdDialog.confirm({
@@ -62,10 +57,3 @@ function DialogController($scope, $mdDialog) {
     $mdDialog.cancel();
   };
 }
-=======
-$scope.bricks =['testimg/bar.png',"testimg/bat.png",
-"testimg/biz.png","testimg/bd.jpg","testimg/wed2.jpg",
-"testimg/gifts.jpg","testimg/rooms2.jpg","testimg/cars.jpg"]; 
-
-     });
->>>>>>> 148f6d8c8e2114c4aed20025a0697596a1f65a10

@@ -264,3 +264,17 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
 .fa-venus-mars{
 	    font-size: 30px;
 }
+<<<<<<< HEAD
+.dialogdemoBasicUsage #popupContainer {
+  position: relative; }
+
+.dialogdemoBasicUsage .footer {
+  width: 100%;
+  text-align: center;
+  margin-left: 20px; }
+
+.dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
+  font-size: 0.8em;
+  margin-top: 50px; }
+=======
+>>>>>>> 148f6d8c8e2114c4aed20025a0697596a1f65a10
